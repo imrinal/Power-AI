@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./footer.css";
 import { FaInstagram, FaTwitter, FaLinkedin, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
