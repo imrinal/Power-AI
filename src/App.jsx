@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Dashboard from "./pages/Dashboard";
-import "./app.css";
+import "./App.css";
 
 function App() {
   const [userData, setUserData] = useState({ diet: "", workout: "", roadmap: "", name: "" });
