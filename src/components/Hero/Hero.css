@@ -1,0 +1,120 @@
+.container{
+    margin: 0;
+    padding-top: 29rem;
+    padding-left: 6rem;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../assets/Hero.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.button{
+    gap: 20px;
+    display: flex;
+}
+
+button{
+    padding: 8px 15px;
+    width: 15rem;
+    border-radius: 35px;
+    background: none;
+    border: 1.5px solid #ffe500;
+    font-size: 1rem;
+    color: #ffe500;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: rgba(255, 230, 0, 0.66);
+    color: white;
+    transform: scale(1.05); 
+    border: 1.5px solid #ffe500;
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
+}
+
+.scroll-down:hover {
+    color: #ffe500;
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding-top: 20rem;
+        padding-left: 3rem;
+    }
+
+    .button {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-image: url('../../assets/Hero-mobile.png') !important;
+        padding-top: 18rem;
+        padding-left: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .button {
+        margin-left: 20px;
+        margin-top: 35px;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    button {
+        width: 12rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        background-image: url('../../assets/Hero-mobile.png') !important;
+        padding-top: 15rem;
+        padding-left: 1rem;
+    }
+
+    .button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 10rem;
+        font-size: 0.85rem;
+    }
+
+    .scroll-down {
+        font-size: 1.5rem;
+    }
+}

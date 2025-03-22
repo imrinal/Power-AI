@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Universal Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;  /* Vertical scrollbar width */
+  height: 10px; /* Horizontal scrollbar height */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #2a2a2a; /* Slightly darker than main background */
+  border-radius: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffe500; /* Highlight Yellow */
+  border-radius: 10px;
+  border: 2px solid #363636; /* Match main background */
+  transition: background 0.3s ease-in-out;
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: wheat; /* Change to wheat on hover */
+}
+
+/* Horizontal Scrollbar Styling */
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+/* Horizontal Scrollbar Thumb */
+::-webkit-scrollbar-thumb:horizontal {
+  background: #ffe500;
+}
+
+/* Horizontal Scrollbar Track */
+::-webkit-scrollbar-track:horizontal {
+  background: #2a2a2a;
+}
+
+/* Firefox Scrollbar Styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffe500 #2a2a2a;
+}

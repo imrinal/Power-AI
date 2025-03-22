@@ -1,0 +1,241 @@
+/* Main container */
+.Prog-Container {
+    width: 100%;
+    margin: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    font-family: poppins;
+    background: #363636;
+  }
+  
+  /* Header section */
+  .head-text {
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20rem;
+    border: none;
+    background: black;
+  }
+  
+  .heading {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 20rem;
+    border: none;
+    background: #ffe500;
+    color: black;
+  }
+  
+  .user {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .user span {
+    font-weight: bold;
+    color: #ffe500;
+  }
+  
+  /* Graph container */
+  .graph-chart {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 2rem;
+    background: #252525;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-chart img {
+    width: 100%;
+    height: 17rem;
+    border-radius: 2rem;
+  }
+  
+  /* Wearable device data section */
+  .wearables {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    width: 24%;
+    height: 10rem;
+    background: #252525;
+    padding: 15px;
+    border-radius: 1.2rem;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2rem;
+    background: #363636;
+    color: #ffe500;
+    font-size: 1.1rem;
+  }
+  
+  .card-title img {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .matrix {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: wheat;
+  }
+
+  .matrix span{
+    font-size: 3.2rem;
+    font-weight: 900;
+  }
+  
+  /* AI-generated Plan section */
+  .generate {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card-pro {
+    width: 32.3%;
+    background: #252525;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pro-title {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 0.5rem;
+    background: #363636;
+    color: #ffe500;
+    font-size: 1.1rem;
+  }
+  
+  .pro-title img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .gen-ai textarea {
+    width: 100%;
+    height: 20rem;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #363636;
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .Prog-Container {
+      padding: 70px 30px 40px;
+  }
+
+  .card, .card-pro {
+      width: 45%;
+      margin-bottom: 20px;
+  }
+
+  .graph-chart img {
+      height: auto;
+  }
+
+  .gen-ai textarea {
+      height: 15rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 18px;
+}
+
+.user{
+  display: none;
+}
+
+  .Prog-Container {
+      padding: 100px 20px 30px;
+  }
+
+  .wearables,
+  .generate {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card,
+  .card-pro {
+      width: 90%;
+  }
+
+  .graph-chart {
+      padding: 0.5rem;
+  }
+
+  .gen-ai textarea {
+      height: 15rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+      font-size: 18px;
+  }
+
+  .user p{
+    display: none;
+  }
+
+  .card,
+  .card-pro {
+      width: 100%;
+  }
+
+  .graph-chart img {
+      height: auto;
+  }
+
+  .gen-ai textarea {
+      height: 15rem;
+  }
+}
+  
